@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formaletas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAVBAR 3 zonas -->
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="#/inicio" class="brand">Formaletas</a>
+    </div>
+
+    <nav class="nav-center">
+      <a href="#/inicio"   data-link>Inicio</a>
+      <a href="#/catalogo" data-link>Formaletas</a>
+      <a href="#/nosotros" data-link>Nosotros</a>
+    </nav>
+
+    <div class="nav-right">
+      <button id="rightIcon" class="icon-btn" title="Icono">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section data-route="inicio" class="route">
+      <h1>¿Qué son las formaletas?</h1>
+      <p>
+        Las <strong>formaletas</strong> son sistemas modulares para el encofrado
+        del concreto. Permiten moldear elementos como muros, losas y columnas,
+        optimizando tiempos de obra y logrando mejores terminaciones.
+      </p>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Opciones</h3>
+          <ul>
+            <li>Modulares, curvas y especiales</li>
+            <li>Aluminio / Acero</li>
+            <li>Alquiler</li>
+          </ul>
+        </article>
+        <article class="info-card">
+          <h3>Tipos</h3>
+          <ul>
+            <li>Para muros y columnas</li>
+            <li>Para losas y vigas</li>
+            <li>Accesorios de ensamble</li>
+          </ul>
+        </article>
+        <article class="info-card">
+          <h3>Medidas</h3>
+          <ul>
+            <li>Paneles 120×60, 90×60, 60×60</li>
+            <li>Vigas 3 m / 4 m / 5 m</li>
+            <li>Puntales telescópicos</li>
+          </ul>
+        </article>
+      </div>
+
+      <h2>Galería</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/800x500?text=Formaletas+1" alt="Formaletas 1">
+        <img src="https://via.placeholder.com/800x500?text=Formaletas+2" alt="Formaletas 2">
+        <img src="https://via.placeholder.com/800x500?text=Formaletas+3" alt="Formaletas 3">
+      </div>
+    </section>
+
+    <section data-route="catalogo" class="route" hidden>
+      <header class="subnav">
+        <h1>Catálogo de formaletas</h1>
+        <div class="tools">
+          <select id="categoryFilter">
+            <option value="all">Todas las categorías</option>
+          </select>
+          <input id="searchInput" type="search" placeholder="Buscar...">
+        </div>
+      </header>
+
+      <section id="productsGrid" class="grid"></section>
+    </section>
+
+    <section data-route="nosotros" class="route" hidden>
+      <h1>Nosotros</h1>
+      <p>
+        Hola, somos <strong>Formaletas</strong>. Brindamos soluciones de encofrado
+        para obras civiles en Colombia, con enfoque en calidad, soporte técnico y
+        disponibilidad de inventario. Este sitio es una base inicial para mostrar
+        información, catálogo y contacto.
+      </p>
+      <ul>
+        <li><b>Misión:</b> facilitar sistemas de encofrado eficientes y seguros.</li>
+        <li><b>Visión:</b> ser referencia nacional en formaletas modulares.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> Formaletas
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
